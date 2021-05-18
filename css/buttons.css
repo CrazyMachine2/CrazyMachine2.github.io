@@ -3,11 +3,39 @@
 .btn {
     display: inline-block;
     color: var(--clr-neutral-100);
-    padding: .27em 1.5em;
+    padding: .3em 1.5em;
     border-radius: 99vh;
     font-weight: var(--fw-regular);
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 100ms ease;
+    white-space: nowrap;
+
+}
+
+.btn-sm {
+    padding: 0.35em 1em;
+}
+
+.btn-lg {
+    padding: .5em 2.5em;
+    font-size: 1.5em;
 }
 
 .btn-secondary {
     background: var(--clr-secondary);
+}
+
+.btn-secondary:hover {
+    background: var(--clr-secondary-light);
+}
+
+.btn-default {
+    background: transparent;
+    color: var(--clr-neutral-100);
+    border: 2px solid var(--clr-neutral-100);
+}
+
+.btn-default:hover {
+    background: rgba(255, 255, 255, 0.1);
 }
