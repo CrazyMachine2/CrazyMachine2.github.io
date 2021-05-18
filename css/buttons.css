@@ -1,0 +1,13 @@
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    color: var(--clr-neutral-100);
+    padding: .27em 1.5em;
+    border-radius: 99vh;
+    font-weight: var(--fw-regular);
+}
+
+.btn-secondary {
+    background: var(--clr-secondary);
+}
