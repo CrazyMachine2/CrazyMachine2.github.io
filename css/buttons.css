@@ -39,3 +39,9 @@
 .btn-default:hover {
     background: rgba(255, 255, 255, 0.1);
 }
+
+.btn-play::before {
+    content: ">";
+    position: absolute;
+    left: 20px;
+}

@@ -9,11 +9,17 @@
     display: flex;
 }
 
+/* Fist Section */ 
+
 .intro {
+    position: relative;
     text-align: center;
     background: var(--clr-primary);
     color: var(--clr-neutral-100);
-    padding: 4em 0 0 0;
+}
+
+.intro .container {
+    position: relative;
 }
 
 .intro__actions {
@@ -21,23 +27,56 @@
     gap: 1em;
 }
 
-.watch-video {
+.intro__actions .btn-play {
     display: none;
     position: relative;
 }
 
-.watch-video::before {
-    content: ">";
-    position: absolute;
-    left: 20px;
+.intro .container h1:first-child{
+    padding: 1.2em 0 0 0;
 }
 
 .intro .container > * + * {
     margin-bottom: 2.5rem;
 }
 
-.intro__trial {
+.intro .container > * + *:last-child,
+.intro .container .intro__trial {
     margin-bottom: 0;
+}
+
+.intro__background-masks {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.mask {
+    position: absolute;
+    width: 260%;
+    height: 125%;
+    top: 10%;
+    opacity: .1;
+}
+
+.intro__background-masks .left-mask,
+.intro__background-masks .right-mask {
+    background: var(--clr-primary-light);
+}
+
+.intro__background-masks .left-mask {
+    transform: rotate(155deg);
+    left: 0;
+}
+
+.intro__background-masks .right-mask {
+    transform: rotate(25deg);
+    right: 0;
+}
+
+.test-management-tool img {
+    width: 850px;
 }
 
 @media screen and (min-width: 800px) {
@@ -45,7 +84,7 @@
         width: 95%;
     }
 
-    .watch-video {
+    .intro__actions .btn-play {
         display: inline-block;
     }
 }

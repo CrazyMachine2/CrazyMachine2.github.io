@@ -79,8 +79,7 @@
 @media screen and (min-width: 800px) {
     
     .header {
-        height: 85px;
-        padding: 0.75em 0;
+        padding: 1.5em 0;
     }
 
     .burger {
@@ -93,7 +92,7 @@
 
     .header .row {
         justify-content: flex-start;
-        gap: 1em;
+        gap: 2em;
     }
 
     .navbar {
@@ -111,12 +110,14 @@
     .navbar__left,
     .navbar__right {
         all: unset;
+        box-sizing: border-box;
         display: flex;
         align-items: center;
-        gap: 1.25em;
+        gap: 1.75em;
     }
 
     .navbar__left__item {
         border: unset;
+        padding: unset;
     }
 }
