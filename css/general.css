@@ -3,18 +3,34 @@
     --clr-primary: #008da9;
     --clr-primary-light: #79c8d8;
     --clr-primary-dark: #00829b;
+    --clr-primary-darker: #2c393d;
     --clr-secondary: #6bb536;
     --clr-secondary-light: #7ec44e;
 
     --clr-neutral-100: #ffffff;
-    --clr-neutral-200: #dbdbdb;
-    --clr-neutral-500: #333333;
+    --clr-neutral-200: #f8f8f8;
+    --clr-neutral-250: #d7d7d7;
+    --clr-neutral-300: #dbdbdb;
+    --clr-neutral-400: #bbbbbb;
+    --clr-neutral-500: #637b85;
+    --clr-neutral-550: #434343;
+    --clr-neutral-600: #333333;
     --clr-neutral-900: #000000;
 
     --fw-light: 300;
     --fw-regular: 400;
     --fw-bold: 700;
     --fw-black: 900;
+
+    --font-size-xs: 0.64rem;
+    --font-size-s: 0.8rem;
+    --font-size-regular: 1rem;
+    --font-size-l: 1.25rem;
+    --font-size-xl: 1.563rem;
+    --font-size-xxl: 1.953rem;
+    --font-size-xxxl: 2.441rem;
+    --font-size-xxxxl: 3.052rem;
+
 
     --max-width: 950px;
 }
@@ -25,6 +41,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+html,
+body {
+    overflow-x: hidden;
 }
 
 img {
