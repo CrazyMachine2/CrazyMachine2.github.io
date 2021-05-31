@@ -1,12 +1,14 @@
 /* Header */
 
 .header {
-    /* position: fixed;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    height: 60px; */
+    height: 60px;
     padding: 1em 0;
+    background: var(--clr-neutral-100);
+    z-index: 1000;
 }
 
 .header .row {
@@ -35,6 +37,11 @@
     font-size: 1.2em;
     font-weight: 700;
     list-style-type: none;
+    background: var(--clr-neutral-100);
+}
+
+.navbar.open {
+    display: flex;
 }
 
 .navbar li {
@@ -77,10 +84,6 @@
 }
 
 @media screen and (min-width: 800px) {
-    
-    .header {
-        padding: 1.5em 0;
-    }
 
     .burger {
         display: none;
