@@ -51,6 +51,8 @@
 }
 
 .list-link {
+    display: inline-block;
+    width: 100%;
     text-decoration: none;
     color: var(--clr-neutral-600);
     transition: color 100ms ease;
