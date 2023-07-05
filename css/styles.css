@@ -1,12 +1,32 @@
 @import url(//fonts.googleapis.com/css?family=Vibur);
-html,body{
-  height:100%
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+html,body{
+  height: 100%;
+}
+
 body {
+
+  margin:0;
+  z-index: 1000;
+}
+
+.container {
+  position: absolute;
+  width: 98%;
+  height: 98%;
+  top: 1%;
+  left: 1%;
+  z-index: 1000;
   background: #112 url(//images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg)  center no-repeat;
   background-size:cover;
-  margin:0
 }
+
 .logo {
   text-align: center;
   width: 65%;
@@ -17,7 +37,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-   user-select: none;
+  user-select: none;
 }
 
 .logo b{
@@ -25,12 +45,15 @@ body {
   color: #fee;
   text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #961fb6, 0 0 0.5em #961fb6, 0 0 0.1em #961fb6, 0 10px 3px #000;
 }
+
 .logo b span{
   animation: blink linear infinite 2s;
 }
+
 .logo b span:nth-of-type(2){
   animation: blink linear infinite 3s;
 }
+
 @keyframes blink {
   78% {
     color: inherit;
@@ -62,5 +85,63 @@ body {
   92.5% {
     color: inherit;
     text-shadow: inherit;
+  }
+}
+
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 400% 0;
+  }
+}
+
+.border-rgb {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /* border: solid 3px #FC5185; */
+  border-radius: 5px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.border-rgb::before {
+  content: "";
+  position: absolute;
+  height: 300%;
+  width: 150%;
+  /* z-index: 1000; */
+  background: conic-gradient(
+    #fd004c,
+    #fe9000,
+    #fff020,
+    #3edf4b,
+    #3363ff,
+    #b102b7,
+    #fd004c
+  );
+  top: -90%;
+  left: -25%;
+  animation: spin 1.5s infinite linear;
+}
+
+/* .border-rgb::after {
+  content: "";
+  position: absolute;
+  width: 99%;
+  height: 99%;
+  top: .5%;
+  left: .5%;
+  background-color: #FC5185;
+} */
+
+@keyframes spin {
+  100% {
+    transform: rotate(-360deg);
   }
 }
