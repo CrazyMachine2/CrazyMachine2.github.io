@@ -167,3 +167,24 @@ body {
       transform: translateY(70vh);
   }
 }
+
+.hope {
+  font: 400 2vh "Vibur"; 
+  color: #fee;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #961fb6, 0 0 0.5em #961fb6, 0 0 0.1em #961fb6, 0 10px 3px #000;
+  z-index: 1000;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  animation: move linear 10s;
+}
+
+
+@keyframes move {
+  from {
+      transform: translateX(1500%);
+  }
+  to {
+      transform: translateX(-50%);
+  }
+}
