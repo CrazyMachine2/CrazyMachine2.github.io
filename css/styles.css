@@ -145,3 +145,25 @@ body {
     transform: rotate(-360deg);
   }
 }
+
+
+.date-around {
+  animation: drop ease-in-out 5s forwards;
+  position: relative;
+  width: auto;
+  padding: 10px
+}
+ 
+.date-around b {
+  font-size: 16px;
+}
+ 
+ 
+@keyframes drop {
+  from {
+      transform: translateY(0);
+  }
+  to {
+      transform: translateY(70vh);
+  }
+}
