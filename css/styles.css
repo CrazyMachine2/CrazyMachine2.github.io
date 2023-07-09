@@ -182,7 +182,7 @@ body {
 
 @keyframes move {
   from {
-      transform: translateX(1500%);
+      transform: translateX(2500%);
   }
   to {
       transform: translateX(-50%);
